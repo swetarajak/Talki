@@ -1,0 +1,7 @@
+/home/codeclouds-sweta/Downloads/shopping-feed/trending-service/src/main/java/com/shoppingfeed/Main.java
+/home/codeclouds-sweta/Downloads/shopping-feed/trending-service/src/main/java/com/shoppingfeed/trending/TrendingServiceApplication.java
+/home/codeclouds-sweta/Downloads/shopping-feed/trending-service/src/main/java/com/shoppingfeed/trending/config/KafkaStreamConfig.java
+/home/codeclouds-sweta/Downloads/shopping-feed/trending-service/src/main/java/com/shoppingfeed/trending/config/RedisConfig.java
+/home/codeclouds-sweta/Downloads/shopping-feed/trending-service/src/main/java/com/shoppingfeed/trending/controller/TrendingController.java
+/home/codeclouds-sweta/Downloads/shopping-feed/trending-service/src/main/java/com/shoppingfeed/trending/service/TrendingService.java
+/home/codeclouds-sweta/Downloads/shopping-feed/trending-service/src/main/java/com/shoppingfeed/trending/streams/TrendingProductsTopology.java

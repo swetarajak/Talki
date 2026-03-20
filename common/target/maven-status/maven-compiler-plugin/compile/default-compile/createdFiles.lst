@@ -1,0 +1,6 @@
+com/shoppingfeed/common/event/UserEvent.class
+com/shoppingfeed/common/event/UserEvent$UserEventBuilder.class
+com/shoppingfeed/common/event/UserEvent$EventType.class
+com/shoppingfeed/Main.class
+com/shoppingfeed/common/dto/ProductDTO$ProductDTOBuilder.class
+com/shoppingfeed/common/dto/ProductDTO.class

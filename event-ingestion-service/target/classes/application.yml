@@ -1,0 +1,24 @@
+# event-ingestion-service/src/main/resources/application.yml
+
+server:
+  port: 8081   # each service runs on a different port
+
+spring:
+  application:
+    name: event-ingestion-service
+
+  kafka:
+    bootstrap-servers: localhost:9092   # where our Kafka is running (Docker)
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.type.mapping: userEvent:com.shoppingfeed.common.event.UserEvent
+
+# Logging — shows us what's happening in the console
+logging:
+  level:
+    com.shoppingfeed: DEBUG
+    org.springframework.kafka: INFO
+
+

@@ -1,0 +1,8 @@
+com/shoppingfeed/trending/config/RedisConfig.class
+com/shoppingfeed/trending/service/TrendingService.class
+com/shoppingfeed/Main.class
+com/shoppingfeed/trending/controller/TrendingController.class
+com/shoppingfeed/trending/TrendingServiceApplication.class
+com/shoppingfeed/trending/config/KafkaStreamConfig.class
+com/shoppingfeed/trending/streams/TrendingProductsTopology.class
+com/shoppingfeed/trending/streams/TrendingProductsTopology$1.class

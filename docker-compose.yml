@@ -1,0 +1,45 @@
+# shopping-feed/docker-compose.yml
+version: '3.8'
+
+services:
+
+  # ─── Kafka + Zookeeper ───────────────────────────────────────────
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.6.0
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.0
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"       # your Spring Boot services connect here
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1   # 1 = fine for local dev
+
+  # ─── Redis ───────────────────────────────────────────────────────
+  redis:
+    image: redis:7.2-alpine
+    ports:
+      - "6379:6379"
+
+  # ─── PostgreSQL ──────────────────────────────────────────────────
+  postgres:
+    image: pgvector/pgvector:pg16   # pgvector = PostgreSQL + vector extension for AI
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: shopuser
+      POSTGRES_PASSWORD: shoppass
+      POSTGRES_DB: shoppingfeed
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # data survives container restarts
+
+volumes:
+  postgres_data:

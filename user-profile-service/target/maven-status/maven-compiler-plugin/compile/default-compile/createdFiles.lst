@@ -1,0 +1,9 @@
+com/shoppingfeed/profile/UserProfileApplication.class
+com/shoppingfeed/profile/model/UserProfile.class
+com/shoppingfeed/profile/model/UserProfile$UserProfileBuilder.class
+com/shoppingfeed/Main.class
+com/shoppingfeed/profile/consumer/UserEventConsumer.class
+com/shoppingfeed/profile/service/UserProfileService$1.class
+com/shoppingfeed/profile/controller/UserProfileController.class
+com/shoppingfeed/profile/repository/UserProfileRepository.class
+com/shoppingfeed/profile/service/UserProfileService.class

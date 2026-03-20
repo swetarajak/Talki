@@ -1,0 +1,7 @@
+/home/codeclouds-sweta/Downloads/shopping-feed/user-profile-service/src/main/java/com/shoppingfeed/Main.java
+/home/codeclouds-sweta/Downloads/shopping-feed/user-profile-service/src/main/java/com/shoppingfeed/profile/UserProfileApplication.java
+/home/codeclouds-sweta/Downloads/shopping-feed/user-profile-service/src/main/java/com/shoppingfeed/profile/consumer/UserEventConsumer.java
+/home/codeclouds-sweta/Downloads/shopping-feed/user-profile-service/src/main/java/com/shoppingfeed/profile/controller/UserProfileController.java
+/home/codeclouds-sweta/Downloads/shopping-feed/user-profile-service/src/main/java/com/shoppingfeed/profile/model/UserProfile.java
+/home/codeclouds-sweta/Downloads/shopping-feed/user-profile-service/src/main/java/com/shoppingfeed/profile/repository/UserProfileRepository.java
+/home/codeclouds-sweta/Downloads/shopping-feed/user-profile-service/src/main/java/com/shoppingfeed/profile/service/UserProfileService.java
